@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff7fb">
+<title>Bloe Permission ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Mitr:wght@400;500;600&display=swap');
+:root{color-scheme:light;--bg:#fff8fc;--pink:#ffd8ef;--rose:#8d365f;--green:#e8f2c8;--white:#fffdfd}
+*{box-sizing:border-box;color-scheme:light}
+html,body{margin:0;background:var(--bg)!important;color:var(--rose)!important;font-family:Itim,Mitr,sans-serif;font-size:18px;line-height:1.55}
+body{background-image:radial-gradient(circle at 8% 12%,#ffe1f2 0 7px,transparent 8px),radial-gradient(circle at 91% 23%,#eaf3cc 0 9px,transparent 10px);background-size:140px 150px,180px 190px}
+.shell{width:min(1120px,calc(75% - 28px));margin:auto;padding:18px 0 40px}
+.hero{position:relative;overflow:hidden;text-align:center;padding:30px 18px;border:3px solid #f5c4df;border-radius:34px;background:linear-gradient(145deg,#fffdfd,#fff0f8);box-shadow:0 10px 28px #b75e8317}
+.hero:before,.hero:after{content:"♡";position:absolute;color:#ffc7e8;font-size:65px;opacity:.8}.hero:before{left:15px;top:0}.hero:after{right:15px;bottom:-12px}
+.bow{font-size:34px}.eyebrow{font-size:25px;display:table;margin:8px auto 0;padding:9px 72px;border:2px solid #dceaa9;border-radius:99px;background:#f4f8df}
+h1{margin:10px 0 0;font-family:Mitr,sans-serif;font-size:clamp(36px,7vw,72px);line-height:1.15;color:#fff7fb;-webkit-text-stroke:1px #8d365f;text-shadow:3px 4px 0 #e8bad4,5px 6px 0 #8d365f}
+.hero p{margin:12px 0 0;font-size:22px}.pill{display:inline-block;margin-top:15px;padding:7px 16px;background:#eaf2cb;border:2px solid #d6e5a3;border-radius:20px}
+.section-title{display:flex;align-items:center;gap:12px;margin:28px 4px 14px;font-family:Mitr,sans-serif;font-size:23px}.section-title:before,.section-title:after{content:"";height:3px;flex:1;background:linear-gradient(90deg,#ffcde8,#e2edb9);border-radius:9px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{padding:21px 18px;background:var(--white);border:3px solid var(--pink);border-radius:27px;box-shadow:0 10px 28px #b75e8317}.card:nth-child(2){border-color:#d8e9a9}.card h2{text-align:center;margin:0 0 12px;font:500 24px Mitr,sans-serif}.card h2 small{display:block;font:16px Itim,sans-serif;opacity:.75}
+ul{list-style:none;padding:0;margin:0}li{padding:7px 0;border-bottom:1px dashed #f0d7e4}li:last-child{border:0}li:before{content:"♡";color:#e78abd;margin-right:9px}.card:nth-child(2) li:before{color:#9dbb61}.card:nth-child(3) li:before{content:"✿"}
+.note{margin-top:12px;padding:10px 12px;border-radius:15px;background:#fff1f8;font-size:16px}.card:nth-child(2) .note{background:#f3f7df}
+.notice{display:grid;grid-template-columns:.7fr 1.3fr;gap:16px;margin-top:22px}.notice-title{display:grid;place-items:center;text-align:center;padding:20px;border:3px solid #f3c3df;border-radius:25px;background:#ffe3f2;font:26px Mitr,sans-serif}.notice-text{padding:20px 22px;border:3px solid #e0eab9;border-radius:25px;background:#fffef8}.notice-text p{margin:0 0 9px}.notice-text p:last-child{margin:0}
+.flowers{text-align:center;letter-spacing:.35em;color:#a55b7d;margin:18px 0}.extra{padding:18px 21px;border:3px dashed #efb8d9;border-radius:24px;background:#fff4fa}.extra h2{font:23px Mitr,sans-serif;margin:0 0 6px}.extra p{margin:0}
+footer{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:22px;padding:14px 18px;border-radius:22px;background:#edf4d5;border:2px solid #d5e3a4}footer strong{font:500 18px Mitr,sans-serif}footer span{font-size:23px;white-space:nowrap}
+@media(max-width:800px){.cards{grid-template-columns:1fr}.notice{grid-template-columns:1fr}.notice-title{min-height:82px}.hero{padding:25px 12px}.card{padding:19px}}
+@media(prefers-color-scheme:dark){html,body{background-color:#fff8fc!important;color:#8d365f!important}}
+</style>
+
+
+<style>
+.snow-princess {
+  position: fixed;
+  top: -35px;
+  z-index: 99999;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow:
+    0 0 4px #ffffff,
+    0 0 8px #ffffff,
+    0 0 16px #ffffff,
+    0 0 28px #eaf7ff,
+    0 0 42px #d9eeff;
+  filter: brightness(1.5);
+  animation: princessSnowFall linear forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes princessSnowFall {
+  0% {
+    transform: translate3d(0, -5vh, 0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate3d(30px, 50vh, 0) rotate(180deg);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(-20px, 110vh, 0) rotate(360deg);
+    opacity: 0;
+  }
+}
+</style>
+
+<script>
+(() => {
+  if (window.princessSnowStarted) return;
+  window.princessSnowStarted = true;
+
+  const symbols = ["❄", "❅", "❆", "✧", "✦"];
+  const colors = ["#ffffff", "#ffffff", "#ffffff", "#fdfdff"];
+
+  function createSnow() {
+    if (document.hidden) return;
+
+    const snow = document.createElement("span");
+    snow.className = "snow-princess";
+    snow.textContent =
+      symbols[Math.floor(Math.random() * symbols.length)];
+
+    snow.style.left = Math.random() * 100 + "vw";
+    snow.style.color =
+      colors[Math.floor(Math.random() * colors.length)];
+    snow.style.fontSize = (14 + Math.random() * 20) + "px";
+    snow.style.animationDuration = (7 + Math.random() * 6) + "s";
+
+    document.body.appendChild(snow);
+
+    snow.addEventListener("animationend", () => snow.remove(), {
+      once: true
+    });
+  }
+
+  setInterval(createSnow, 220);
+})();
+</script>
+
+<!-- โค้ดเพลง -->
+
+
+<style>
+#princess-music {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 99999;
+}
+
+#princess-toggle {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 18px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #fff7fc, #f8d9ed);
+  color: #bd6c9c;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #ffc9e8, 0 4px 12px #dba6c5;
+  transition: transform .2s;
+}
+
+#princess-toggle:hover {
+  transform: scale(1.06);
+}
+
+#princess-toggle .main-note {
+  display: inline-block;
+  font-size: 30px;
+  color: #e58bb9;
+  text-shadow: 0 0 8px white, 0 0 16px #ffc5e6;
+}
+
+#princess-toggle.playing .main-note {
+  animation: princess-note-dance .6s ease-in-out infinite alternate;
+}
+
+@keyframes princess-note-dance {
+  from { transform: rotate(-15deg) scale(1); }
+  to { transform: rotate(15deg) scale(1.2); }
+}
+
+.fairy-float {
+  position: fixed;
+  z-index: 100000;
+  pointer-events: none;
+  color: #e58bb9;
+  text-shadow: 0 0 8px white;
+  font-size: 20px;
+  animation: fairyRise 1.5s ease-out forwards;
+}
+
+@keyframes fairyRise {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(.7) rotate(0deg);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px) scale(1.4) rotate(25deg);
+  }
+}
+</style>
+
+<div id="princess-music">
+  <button id="princess-toggle" type="button">
+    <span class="main-note">♫</span>
+    <span id="princess-label">เปิดเพลง ♡</span>
+    <span>✧</span>
+  </button>
+</div>
+
+<script>
+(() => {
+  const button = document.getElementById("princess-toggle");
+  const label = document.getElementById("princess-label");
+
+  if (!button || !label) return;
+
+  let context = null;
+  let playing = false;
+  let timer = null;
+  let noteIndex = 0;
+
+  const melody = [
+    1046.50, 1318.51, 1567.98, 1318.51,
+    1174.66, 1396.91, 1760.00, 1567.98,
+    1318.51, 1567.98, 2093.00, 1760.00,
+    1567.98, 1396.91, 1318.51, 1046.50
+  ];
+
+  function playNote(frequency) {
+    const now = context.currentTime;
+    const oscillator = context.createOscillator();
+    const volume = context.createGain();
+
+    const overtone = context.createOscillator();
+    const overtoneVolume = context.createGain();
+
+    oscillator.type = "sine";
+    oscillator.frequency.setValueAtTime(frequency, now);
+
+    overtone.type = "sine";
+    overtone.frequency.setValueAtTime(frequency * 2, now);
+
+    volume.gain.setValueAtTime(0.0001, now);
+    volume.gain.exponentialRampToValueAtTime(0.07, now + 0.015);
+    volume.gain.exponentialRampToValueAtTime(0.0001, now + 1.1);
+
+    overtoneVolume.gain.setValueAtTime(0.0001, now);
+    overtoneVolume.gain.exponentialRampToValueAtTime(0.012, now + 0.015);
+    overtoneVolume.gain.exponentialRampToValueAtTime(0.0001, now + 0.45);
+
+    oscillator.connect(volume);
+    volume.connect(context.destination);
+
+    overtone.connect(overtoneVolume);
+    overtoneVolume.connect(context.destination);
+
+    oscillator.start(now);
+    overtone.start(now);
+
+    oscillator.stop(now + 1.15);
+    overtone.stop(now + 0.5);
+  }
+
+  function sparkle() {
+    const rect = button.getBoundingClientRect();
+
+    for (let i = 0; i < 3; i++) {
+      const star = document.createElement("span");
+      star.className = "fairy-float";
+      star.textContent = ["♪", "✧", "♡", "❀"][
+        Math.floor(Math.random() * 4)
+      ];
+
+      star.style.left =
+        rect.left + Math.random() * rect.width + "px";
+      star.style.top =
+        rect.top + Math.random() * rect.height + "px";
+
+      document.body.appendChild(star);
+      star.addEventListener("animationend", () => star.remove(), {
+        once: true
+      });
+    }
+  }
+
+  button.addEventListener("click", async () => {
+    if (!context) {
+      context = new (
+        window.AudioContext || window.webkitAudioContext
+      )();
+    }
+
+    await context.resume();
+
+    if (playing) {
+      playing = false;
+      clearInterval(timer);
+      label.textContent = "เปิดเพลง ♡";
+      button.classList.remove("playing");
+      return;
+    }
+
+    playing = true;
+    label.textContent = "กำลังบรรเลง ♫";
+    button.classList.add("playing");
+
+    const nextNote = () => {
+      if (!playing) return;
+      playNote(melody[noteIndex % melody.length]);
+      noteIndex++;
+      sparkle();
+    };
+
+    nextNote();
+    timer = setInterval(nextNote, 420);
+  });
+})();
+</script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&family=Mitr:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<main class="shell">
+<header class="hero">
+<div class="bow"></div>
+<div class="eyebrow">ข้อตกลงของคุณบลู</div>
+<div class="cute-text">
+  <p>อ่านรายละเอียดก่อนตัดสินใจทุกครั้งนะคับ ♡</p>
+<style>
+.cute-text p {
+  font-family: 'Mali', cursive;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: #984d75;
+  text-align: center;
+}
+</style>
+</div>
+</header>
+
+<div class="bloe-banner">
+<a src=" href="https://ibb.co/JwFZH8JM"> <img src="https://i.ibb.co/21YJdR4f/1731-20261016150506.png" alt="1731-20261016150506" border="0"></a>
+  <style>
+.bloe-banner {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+  line-height: 0;
+}
+
+.bloe-banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-top: 45px;
+  border-radius: 30px;
+}
+@media (max-width: 600px) {
+  .bloe-banner {
+    border-radius: 16px;
+    margin-bottom: 14px;
+  }
+}
+</style>
+</div>
+
+<div class="section-title">สิทธิ์การใช้งาน ୨୧</div>
+<section class="cards">
+<article class="card">
+<h2>สิทธิ์ปกติ<small>♡ NORMAL PERMISSION ♡</small></h2>
+<ul><li>โรลได้</li><li>งดไลฟ์</li><li>งดขายต่อและงดประมูล</li><li>งดแจกและงดแถม</li><li>ห้ามนำไปใช้กับงานอื่น</li><li>งดดัดแปลงทุกกรณี</li></ul>
+<div class="note">เหมาะสำหรับใช้งานส่วนตัวตามข้อตกลงที่ตกลงกันไว้</div>
+</article>
+<article class="card">
+<h2>สิทธิ์เชิง<small>COMMERCIAL PERMISSION</small></h2>
+<ul><li>โรลได้ และไลฟ์ได้</li><li>งดดัดแปลงเกิน 30%</li><li>แก้ไขได้ตามขอบเขตที่ตกลงกัน</li><li>คงลายเส้นและเอกลักษณ์เดิม</li><li>งดประมูล งดแจก และงดแถม</li><li>ห้ามนำไปใช้กับงานอื่น</li></ul>
+<div class="note">หากต้องการแก้ไขเพิ่มเติม กรุณาสอบถามก่อนทุกครั้งนะคับ</div>
+</article>
+<article class="card">
+<h2>สิทธิ์ขาด<small>♡ FULL PERMISSION ♡</small></h2>
+<ul><li>ไลฟ์ได้ และขายต่อได้</li><li>แจกได้และแถมได้</li><li>ดัดแปลงได้ตามข้อตกลง</li><li>เป็นสิทธื์ของผู้ซื้อ 100% แต่ไม่ควรแอบอ้างนะคับ</li></ul>
+<div class="note">โปรดตรวจสอบรายละเอียดสิทธิ์ที่ได้รับก่อนนำไปเผยแพร่หรือส่งต่อ</div>
+</article>
+</section>
+<section class="notice">
+<div class="notice-title">♡ สำคัญ ♡</div>
+<div class="notice-text"><p>อ่านข้อตกลงให้ครบก่อนเริ่มงานทุกครั้งนะคับ</p><p>หากต้องการเปลี่ยนสิทธิ์หรือรายละเอียดหลังเริ่มงานแล้ว กรุณาแจ้งและตกลงกันก่อนดำเนินการต่อ</p><p>หากไม่แน่ใจว่าสามารถนำผลงานไปทำอะไรได้บ้าง สามารถสอบถามก่อนใช้งานได้เลยคับ</p></div>
+</section>
+<div class="flowers">✿ ✿ ✿ ✿ ✿ ✿ ✿ ✿ ✿</div>
+<section class="extra"><h2>୨୧ ข้อตกลงเพิ่มเติม</h2><p>กรุณาเก็บรายละเอียดการตกลงสิทธิ์ไว้เป็นหลักฐาน หากมีการเปลี่ยนแปลงขอบเขตการใช้งาน ควรแจ้งให้ทราบก่อนนำผลงานไปใช้ในรูปแบบใหม่</p></section>
+<footer><strong>ขอบคุณที่สนับสนุนผลงานของคุณบลู ♡</strong><span>♡</span></footer>
+</main>
+</body>
+</html>     
